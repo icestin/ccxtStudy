@@ -1,0 +1,29 @@
+{
+  "name": "ccxtstudy",
+  "version": "1.0.0",
+  "description": " test the example of ccxt",
+  "main": "null",
+  "dependencies": {
+    "as-table": "^1.0.33",
+    "ccxt": "^1.15.8",
+    "ololog": "^1.1.103"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icestin/ccxtStudy.git"
+  },
+  "keywords": [
+    "ccxt",
+    "study"
+  ],
+  "author": "nfz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icestin/ccxtStudy/issues"
+  },
+  "homepage": "https://github.com/icestin/ccxtStudy#readme"
+}
