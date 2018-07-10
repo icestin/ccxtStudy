@@ -1,5 +1,7 @@
 (async function test () {
-    const ccxt = require ('ccxt')
+
+    const sleep = (ms) => new Promise(resove => setTimeout(resove, ms));
+    const ccxt = require ('ccxt');
     // const exchange = new ccxt.bitfinex ();
     const exchange = new ccxt.bitlish ();
     console.log("Support symbol", JSON.stringify(exchange.symbols));
@@ -15,6 +17,41 @@
     let ask = orders.asks.length ? orders.asks[0][0] : undefined;
     let spread = (bid && ask) ? ask - bid : undefined;
     console.log(exchange.id, "market price", JSON.stringify({bid, ask, spread}));
+    
+    // 获取 ticker数据
+    let btcUSDTicker = await exchange.fetchTicker('BTC/USD');
+    console.log("BTC/USD获取的ticker数据:\n",JSON.stringify(btcUSDTicker));
+    // 通过交易所获取symbols信息 然后遍循环获取数据
+    // BCH/BTC,BCH/EUR,BTC/EUR,BTC/RUB,BTC/USD,BTG/BTC,BTG/EUR,DASH/BTC,DASH/EUR,DASH/RUB,DASH/USD,ETH/BTC,ETH/EUR,ETH/RUB,ETH/USD,HBZ/BTC,HBZ/ETH,HBZ/EUR,HBZ/USD,LTC/BTC,LTC/EUR,LTC/RUB,LTC/USD,DOGE/BTC,DOGE/EUR,XMR/BTC,XMR/EUR,XRP/BTC,XRP/EUR,ZEC/BTC,ZEC/EUR,ZEC/RUB,ZEC/USD
+    let symbols = Object.keys(exchange.markets);
+    console.log("交易所支持的交易symbols:\n",symbols.join(','));
+    let random = Math.floor (Math.random () * (symbols.length - 1));
+    
+    let randomTicker = await exchange.fetchTicker(symbols[random]);
+    console.log("随机获取到的Ticker: \n", JSON.stringify(randomTicker));
+   
+    let allTicker = await exchange.fetchTickers();
+    //console.log("获取到所有的Ticker数据:\n", JSON.stringify(allTicker));
+
+    if (exchange.has.fetchOHLCV) {       
+           //symbols.length;
+           for (let i=0; i< 2; i++) {
+               await sleep(exchange.rateLimit);
+               try {
+                   let ohlv = await exchange.fetchOHLCV(symbols[i],'1d' );
+                   console.log("OHLCV for :", symbols[i], ohlv);
+                   await sleep(exchange.rateLimit);
+                   // symbol since limit数量
+                   let trade = await exchange.fetchTrades(symbols[i],undefined,3);
+                   console.log("trade for :", symbols[i], JSON.stringify(trade));
+                } catch (error) {
+                   console.log("出现错误:\n", JSON.stringify(error));
+               }
+           }
+       
+    } else {
+      console.log("不支持 fetchOHLCV");
+    }
 }) ()
 
 /***
@@ -68,3 +105,4 @@
 
 * 
 */
+
