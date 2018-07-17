@@ -4,7 +4,21 @@
     const ccxt = require ('ccxt');
     // const exchange = new ccxt.bitfinex ();
     const exchange = new ccxt.bitlish ();
+    console.log("exchange:", exchange);
     console.log("Support symbol", JSON.stringify(exchange.symbols));
+    
+    let markets = await exchange.load_markets ();
+    console.log ("exchangeID,and markets",exchange.id, JSON.stringify(markets));
+// enable built-in rate limiting upon instantiation of the exchange
+// const exchange = new ccxt.bitfinex ({
+//     'enableRateLimit': true,
+// }) 
+// 在初始化时开启
+
+// or switch the built-in rate-limiter on or off later after instantiation
+exchange.enableRateLimit = true // enable
+// exchange.enableRateLimit = false // disable
+
     const limit = 5
     const orders = await exchange.fetchOrderBook ('BTC/USD', limit, {
         // this parameter is exchange-specific, all extra params have unique names per exchange
