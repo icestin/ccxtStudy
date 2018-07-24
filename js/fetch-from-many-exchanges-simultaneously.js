@@ -18,7 +18,8 @@ const exchanges = ['gdax', 'poloniex'];
              'enableRateLimit': true
          });
          const ticker = await exchange.fetchTicker(symbol);
-         return exchange.extend({'exchange': id} , ticker);
+        //  return exchange.extend({'exchange': id} , ticker);
+         return ticker;  // 结果相同
      }))
 
      log (result);

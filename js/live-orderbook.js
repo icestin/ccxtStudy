@@ -93,7 +93,7 @@ let printOrderBook = async (id, symbol, depth) => {
         await printOrderBook ('crypton', 'ETH3X/USDT', 10);
         
     } else {
-        // await printOrderBook ('crypton', 'ETH3X/USDT', 10);
+        await printOrderBook ('crypton', 'LTC/BTC', 10);
 
         printUsage ()
     }
