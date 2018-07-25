@@ -1,0 +1,59 @@
+Error: okex GET https://www.okex.com/v2/spot/markets/products system request to https://www.okex.com/v2/spot/markets/products failed, reason: Hostname/IP doesn't match certificate's altnames: "Host: www.okex.com. is not in the cert's altnames: DNS:tweetdeck.twitter.com, DNS:tweetdeck.com, DNS:www.tweetdeck.com, DNS:web.tweetdeck.com, DNS:api.tweetdeck.com, DNS:downloads.tweetdeck.com, DNS:tdapi.twitter.com, DNS:td.twitter.com, DNS:blog.tweetdeck.com"
+Error: bithumb {"status":5600,"message":"점검중 입니다."}
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: Hostname/IP doesn't match certificate's altnames: "Host: api.huobi.pro. is not in the cert's altnames: DNS:*.facebook.com, DNS:*.xx.fbcdn.net, DNS:*.fbsbx.com, DNS:*.xz.fbcdn.net, DNS:*.facebook.net, DNS:*.xy.fbcdn.net, DNS:*.messenger.com, DNS:fb.com, DNS:*.fbcdn.net, DNS:*.fb.com, DNS:*.m.facebook.com, DNS:messenger.com, DNS:facebook.com"
+Error: kraken does not provide an order book for darkpool symbol ETHCAD.d
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: socket hang up
+Error: bithumb {"status":5600,"message":"점검중 입니다."}
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ECONNREFUSED 69.171.234.18:443
+Error: kraken does not provide an order book for darkpool symbol ETHCAD.d
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: socket hang up
+Error: bithumb {"status":5600,"message":"점검중 입니다."}
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ECONNREFUSED 69.171.234.18:443
+Error: kraken does not provide an order book for darkpool symbol ETHCAD.d
+Error: poloniex GET https://poloniex.com/public?command=returnOrderBook&currencyPair=XMR_BLK&depth=5 system request to https://poloniex.com/public?command=returnOrderBook&currencyPair=XMR_BLK&depth=5 failed, reason: socket hang up
+Error: bitflyer GET https://api.bitflyer.jp/v1/getboard?product_code=FX_BTC_JPY system request to https://api.bitflyer.jp/v1/getboard?product_code=FX_BTC_JPY failed, reason: socket hang up
+Error: gdax GET https://api.gdax.com/products/LTC-EUR/book?level=2 system request to https://api.gdax.com/products/LTC-EUR/book?level=2 failed, reason: socket hang up
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo request timed out (20000 ms)
+Error: gateio GET https://data.gate.io/api2/1/marketinfo request timed out (20000 ms)
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols request timed out (20000 ms)
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols request timed out (20000 ms)
+Error: okex GET https://www.okex.com/v2/spot/markets/products request timed out (20000 ms)
+Error: zb GET http://api.zb.com/data/v1/markets request timed out (20000 ms)
+Error: bitstamp GET https://www.bitstamp.net/api/v2/order_book/ethusd/ request timed out (20000 ms)
+Error: bithumb {"status":5600,"message":"점검중 입니다."}
+Error: zb GET http://api.zb.com/data/v1/markets 404 Not Found 
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details 400 Bad Request  (possible reasons: invalid API keys, bad or old nonce, exchange is down or offline, on maintenance, DDoS protection, rate-limiting)
+Error: kraken does not provide an order book for darkpool symbol ETHCAD.d
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo request timed out (20000 ms)
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: connect ETIMEDOUT 46.82.174.68:443
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: connect ETIMEDOUT 69.171.229.28:443
+Error: okex GET https://www.okex.com/v2/spot/markets/products system request to https://www.okex.com/v2/spot/markets/products failed, reason: connect ETIMEDOUT 67.228.235.91:443
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols system request to http://api.hitbtc.com/api/1/public/symbols failed, reason: connect ETIMEDOUT 75.126.2.43:80
+Error: gateio GET https://data.gate.io/api2/1/marketinfo system request to https://data.gate.io/api2/1/marketinfo failed, reason: connect ETIMEDOUT 69.171.240.27:443
+Error: bitstamp GET https://www.bitstamp.net/api/v2/order_book/btcusd/ system request to https://www.bitstamp.net/api/v2/order_book/btcusd/ failed, reason: socket hang up
+Error: bitflyer GET https://api.bitflyer.jp/v1/getboard?product_code=ETH_BTC system request to https://api.bitflyer.jp/v1/getboard?product_code=ETH_BTC failed, reason: socket hang up
+Error: gdax GET https://api.gdax.com/products/ETH-BTC/book?level=2 system request to https://api.gdax.com/products/ETH-BTC/book?level=2 failed, reason: socket hang up
+Error: poloniex GET https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_PPC&depth=5 request timed out (20000 ms)
+Error: bittrex GET https://bittrex.com/api/v1.1/public/getorderbook?market=BTC-XLM&type=both system request to https://bittrex.com/api/v1.1/public/getorderbook?market=BTC-XLM&type=both failed, reason: getaddrinfo ENOTFOUND bittrex.com bittrex.com:443
+Error: quoinex GET https://api.quoine.com/products/28/price_levels system request to https://api.quoine.com/products/28/price_levels failed, reason: getaddrinfo ENOTFOUND api.quoine.com api.quoine.com:443
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: socket hang up
+Error: bitflyer GET https://api.bitflyer.jp/v1/getmarkets/eu system request to https://api.bitflyer.jp/v1/getmarkets/eu failed, reason: socket hang up
+Error: gdax GET https://api.gdax.com/products/BCH-USD/book?level=2 system request to https://api.gdax.com/products/BCH-USD/book?level=2 failed, reason: socket hang up
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ECONNREFUSED 69.171.229.73:443
+Error: kraken does not provide an order book for darkpool symbol ETHCAD.d
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols 400 Bad Request  (possible reasons: invalid API keys, bad or old nonce, exchange is down or offline, on maintenance, DDoS protection, rate-limiting)
+Error: bithumb {"status":5600,"message":"점검중 입니다."}
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ECONNREFUSED 69.171.229.73:443
+Error: kraken does not provide an order book for darkpool symbol ETHCAD.d
+Error: poloniex GET https://poloniex.com/public?command=returnOrderBook&currencyPair=XMR_BTCD&depth=5 system request to https://poloniex.com/public?command=returnOrderBook&currencyPair=XMR_BTCD&depth=5 failed, reason: socket hang up
+Error: gdax GET https://api.gdax.com/products/BCH-EUR/book?level=2 system request to https://api.gdax.com/products/BCH-EUR/book?level=2 failed, reason: socket hang up
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: socket hang up
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols system request to http://api.hitbtc.com/api/1/public/symbols failed, reason: socket hang up
+Error: zb GET http://api.zb.com/data/v1/markets system request to http://api.zb.com/data/v1/markets failed, reason: socket hang up
+Error: okex GET https://www.okex.com/v2/spot/markets/products system request to https://www.okex.com/v2/spot/markets/products failed, reason: connect ETIMEDOUT 67.15.129.210:443
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo system request to https://api.binance.com/api/v1/exchangeInfo failed, reason: connect ETIMEDOUT 69.63.180.173:443
+Error: gateio GET https://data.gate.io/api2/1/marketinfo system request to https://data.gate.io/api2/1/marketinfo failed, reason: connect ETIMEDOUT 74.86.17.48:443
+Error: bitflyer GET https://api.bitflyer.jp/v1/getboard?product_code=BTC_EUR system request to https://api.bitflyer.jp/v1/getboard?product_code=BTC_EUR failed, reason: socket hang up
+Error: bittrex GET https://bittrex.com/api/v1.1/public/getorderbook?market=BTC-INCNT&type=both request timed out (60000 ms)
+Error: bitstamp GET https://www.bitstamp.net/api/v2/order_book/etheur/ request timed out (60000 ms)
+Error: quoinex GET https://api.quoine.com/products/49/price_levels request timed out (60000 ms)

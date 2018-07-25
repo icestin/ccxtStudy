@@ -1,2 +1,2 @@
 # ccxt study
-## code partice 01
+## code pratice 01

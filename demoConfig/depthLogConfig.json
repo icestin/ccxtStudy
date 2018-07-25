@@ -1,0 +1,39 @@
+{
+    "appenders": {
+      "stdout": {
+        "type": "stdout"
+      },
+      "file": {
+        "type": "dateFile",
+        "filename": "./logs/depth.log",
+        "layout": {
+          "type": "dummy"
+        },
+        "pattern": ".yyyy-MM-dd-hh",
+        "alwaysIncludePattern": true
+      },
+      "err": {
+        "type": "dateFile",
+        "filename": "./logs/err/err-depth.log",
+        "pattern": ".yyyy-MM-dd",
+        "layout": {
+          "type": "dummy"
+        },
+        "alwaysIncludePattern": true
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "file"
+        ],
+        "level": "info"
+      },
+      "err": {
+        "appenders": [
+          "err"
+        ],
+        "level": "error"
+      }
+    }
+  }

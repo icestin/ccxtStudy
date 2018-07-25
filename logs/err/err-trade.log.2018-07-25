@@ -1,0 +1,74 @@
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: socket hang up
+Error: okex GET https://www.okex.com/v2/spot/markets/products 400 Error not accessible from this location at the moment
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: socket hang up
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols system request to http://api.hitbtc.com/api/1/public/symbols failed, reason: socket hang up
+Error: bithumb {"status":5600,"message":"점검중 입니다."}
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo system request to https://api.binance.com/api/v1/exchangeInfo failed, reason: socket hang up
+Error: gdax GET https://api.gdax.com/products/ETH-BTC/trades system request to https://api.gdax.com/products/ETH-BTC/trades failed, reason: socket hang up
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ETIMEDOUT 67.228.102.32:443
+Error: gateio GET https://data.gate.io/api2/1/marketinfo system request to https://data.gate.io/api2/1/marketinfo failed, reason: connect ETIMEDOUT 67.228.235.91:443
+Error: zb GET http://api.zb.com/data/v1/markets system request to http://api.zb.com/data/v1/markets failed, reason: connect ETIMEDOUT 208.43.170.231:80
+Error: bitflyer GET https://api.bitflyer.jp/v1/getexecutions?product_code=FX_BTC_JPY system request to https://api.bitflyer.jp/v1/getexecutions?product_code=FX_BTC_JPY failed, reason: socket hang up
+Error: kraken GET https://api.kraken.com/0/public/Trades?pair=XETHXXBT system request to https://api.kraken.com/0/public/Trades?pair=XETHXXBT failed, reason: socket hang up
+Error: poloniex GET https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_ETC&start=1532505501&end=1532505562 system request to https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_ETC&start=1532505501&end=1532505562 failed, reason: socket hang up
+Error: quoinex GET https://api.quoine.com/executions?product_id=42&limit=1000&timestamp=1532505471 request timed out (60000 ms)
+Error: bitstamp GET https://www.bitstamp.net/api/v2/transactions/btceur/?time=hour system request to https://www.bitstamp.net/api/v2/transactions/btceur/?time=hour failed, reason: socket hang up
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: socket hang up
+Error: okex GET https://www.okex.com/v2/spot/markets/products 400 Error not accessible from this location at the moment
+Error: bitstamp GET https://www.bitstamp.net/api/v2/trading-pairs-info/ system request to https://www.bitstamp.net/api/v2/trading-pairs-info/ failed, reason: socket hang up
+Error: zb GET http://api.zb.com/data/v1/markets system request to http://api.zb.com/data/v1/markets failed, reason: connect ETIMEDOUT 74.86.17.48:80
+Error: gateio GET https://data.gate.io/api2/1/marketinfo system request to https://data.gate.io/api2/1/marketinfo failed, reason: connect ETIMEDOUT 67.228.235.91:443
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ETIMEDOUT 67.228.102.32:443
+Error: poloniex GET https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_CVC&start=1532505869&end=1532505930 system request to https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_CVC&start=1532505869&end=1532505930 failed, reason: socket hang up
+Error: kraken GET https://api.kraken.com/0/public/Trades?pair=XXBTZEUR system request to https://api.kraken.com/0/public/Trades?pair=XXBTZEUR failed, reason: socket hang up
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo system request to https://api.binance.com/api/v1/exchangeInfo failed, reason: socket hang up
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: socket hang up
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols system request to http://api.hitbtc.com/api/1/public/symbols failed, reason: socket hang up
+Error: gdax GET https://api.gdax.com/products/ETH-EUR/trades system request to https://api.gdax.com/products/ETH-EUR/trades failed, reason: socket hang up
+Error: bitflyer GET https://api.bitflyer.jp/v1/getexecutions?product_code=BCH_BTC system request to https://api.bitflyer.jp/v1/getexecutions?product_code=BCH_BTC failed, reason: socket hang up
+Error: bithumb GET https://api.bithumb.com/public/transaction_history/WAX?count=100 system request to https://api.bithumb.com/public/transaction_history/WAX?count=100 failed, reason: socket hang up
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: socket hang up
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols 404 Not Found 
+Error: okex GET https://www.okex.com/v2/spot/markets/products 400 Bad Request  (possible reasons: invalid API keys, bad or old nonce, exchange is down or offline, on maintenance, DDoS protection, rate-limiting)
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ETIMEDOUT 69.171.235.64:443
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo system request to https://api.binance.com/api/v1/exchangeInfo failed, reason: connect ETIMEDOUT 75.126.2.43:443
+Error: gateio GET https://data.gate.io/api2/1/marketinfo system request to https://data.gate.io/api2/1/marketinfo failed, reason: connect ETIMEDOUT 174.36.228.136:443
+Error: zb GET http://api.zb.com/data/v1/markets system request to http://api.zb.com/data/v1/markets failed, reason: connect ETIMEDOUT 74.86.17.48:80
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: connect ETIMEDOUT 69.171.229.28:443
+Error: kraken GET https://api.kraken.com/0/public/Trades?pair=XXBTZEUR system request to https://api.kraken.com/0/public/Trades?pair=XXBTZEUR failed, reason: socket hang up
+Error: poloniex GET https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_CVC&start=1532506170&end=1532506231 system request to https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_CVC&start=1532506170&end=1532506231 failed, reason: socket hang up
+Error: bitstamp GET https://www.bitstamp.net/api/v2/trading-pairs-info/ request timed out (60000 ms)
+FetchError: invalid response body at: https://api.gdax.com/products/BCH-BTC/trades reason: unexpected end of file
+Error: bitflyer GET https://api.bitflyer.jp/v1/getexecutions?product_code=BCH_BTC system request to https://api.bitflyer.jp/v1/getexecutions?product_code=BCH_BTC failed, reason: socket hang up
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ECONNREFUSED 69.171.234.48:443
+Error: gateio GET https://data.gate.io/api2/1/marketinfo system request to https://data.gate.io/api2/1/marketinfo failed, reason: connect ETIMEDOUT 69.171.233.24:443
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: connect ETIMEDOUT 69.171.228.20:443
+Error: okex GET https://www.okex.com/v2/spot/markets/products system request to https://www.okex.com/v2/spot/markets/products failed, reason: connect ETIMEDOUT 88.191.253.157:443
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: connect ETIMEDOUT 173.252.100.32:443
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols system request to http://api.hitbtc.com/api/1/public/symbols failed, reason: connect ETIMEDOUT 174.36.196.242:80
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo system request to https://api.binance.com/api/v1/exchangeInfo failed, reason: socket hang up
+Error: zb GET http://api.zb.com/data/v1/markets system request to http://api.zb.com/data/v1/markets failed, reason: socket hang up
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ECONNREFUSED 69.171.234.48:443
+Error: zb GET http://api.zb.com/data/v1/markets system request to http://api.zb.com/data/v1/markets failed, reason: socket hang up
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo system request to https://api.binance.com/api/v1/exchangeInfo failed, reason: socket hang up
+Error: okex GET https://www.okex.com/v2/spot/markets/products system request to https://www.okex.com/v2/spot/markets/products failed, reason: connect ETIMEDOUT 88.191.253.157:443
+Error: gateio GET https://data.gate.io/api2/1/marketinfo system request to https://data.gate.io/api2/1/marketinfo failed, reason: connect ETIMEDOUT 69.171.233.24:443
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols system request to http://api.hitbtc.com/api/1/public/symbols failed, reason: connect ETIMEDOUT 174.36.196.242:80
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: connect ETIMEDOUT 173.252.100.32:443
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: connect ETIMEDOUT 69.171.228.20:443
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details system request to https://api.bitfinex.com/v1/symbols_details failed, reason: connect ECONNREFUSED 69.171.234.48:443
+Error: gateio GET https://data.gate.io/api2/1/marketinfo system request to https://data.gate.io/api2/1/marketinfo failed, reason: connect ETIMEDOUT 69.171.233.24:443
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: connect ETIMEDOUT 69.171.228.20:443
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: connect ETIMEDOUT 173.252.100.32:443
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols system request to http://api.hitbtc.com/api/1/public/symbols failed, reason: connect ETIMEDOUT 174.36.196.242:80
+Error: okex GET https://www.okex.com/v2/spot/markets/products system request to https://www.okex.com/v2/spot/markets/products failed, reason: connect ETIMEDOUT 88.191.253.157:443
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo system request to https://api.binance.com/api/v1/exchangeInfo failed, reason: socket hang up
+Error: zb GET http://api.zb.com/data/v1/markets system request to http://api.zb.com/data/v1/markets failed, reason: socket hang up
+Error: bitfinex GET https://api.bitfinex.com/v1/symbols_details 404 Not Found 
+Error: gateio GET https://data.gate.io/api2/1/marketinfo 400 Bad Request  (possible reasons: invalid API keys, bad or old nonce, exchange is down or offline, on maintenance, DDoS protection, rate-limiting)
+Error: binance GET https://api.binance.com/api/v1/exchangeInfo 400 Bad Request  (possible reasons: invalid API keys, bad or old nonce, exchange is down or offline, on maintenance, DDoS protection, rate-limiting)
+Error: okex GET https://www.okex.com/v2/spot/markets/products system request to https://www.okex.com/v2/spot/markets/products failed, reason: connect ETIMEDOUT 66.220.155.14:443
+Error: bitz GET https://api.bit-z.com/api_v1/tickerall system request to https://api.bit-z.com/api_v1/tickerall failed, reason: connect ETIMEDOUT 69.171.244.15:443
+Error: huobipro GET https://api.huobi.pro/v1/common/symbols system request to https://api.huobi.pro/v1/common/symbols failed, reason: socket hang up
+Error: hitbtc GET http://api.hitbtc.com/api/1/public/symbols system request to http://api.hitbtc.com/api/1/public/symbols failed, reason: socket hang up
+Error: zb GET http://api.zb.com/data/v1/markets system request to http://api.zb.com/data/v1/markets failed, reason: socket hang up

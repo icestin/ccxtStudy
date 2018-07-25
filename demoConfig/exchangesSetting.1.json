@@ -1,11 +1,11 @@
  
  {
  "okex":  {}, 
- "zb" : {"timeout": 20000}, 
+ "zb" : {"timeout": 60000}, 
  "gateio": {}, 
  "bitz": {},
- "binance": { "timeout": 20000 },
- "bitfinex": {  "timeout": 20000 },
+ "binance": { "timeout": 60000 },
+ "bitfinex": {  "timeout": 60000 },
  "bitflyer" : {},
  "bithumb": {},
  "bittrex": {}, 
@@ -15,7 +15,7 @@
  "quoinex": {}, 
  "hitbtc": {}, 
  "kraken": {}, 
- "poloniex": { "timeout": 20000}
+ "poloniex": { "timeout": 60000}
 }
 
  

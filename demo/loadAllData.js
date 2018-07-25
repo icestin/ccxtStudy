@@ -23,8 +23,8 @@ async function test () {
         
         try {
                 
-            let market = await exchange.loadMarkets ();
-            let symbols = exchange.symbols;
+            let markets = await exchange.loadMarkets ();
+            let symbols =  Object.keys(markets);
 
         while (true) {
             

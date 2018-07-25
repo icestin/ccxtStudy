@@ -2,13 +2,23 @@
 
 const ccxt     = require ('ccxt')
     , settings = require ('../demoConfig/exchangesSetting.json');
+const tickerLogConfig = require('../demoConfig/tickerLogConfig.json');
+const log4js = require('log4js');
+const moment = require('moment');
+    
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+    
+/****log4js 信息设置*******/
+log4js.configure(tickerLogConfig);
+var logger = log4js.getLogger();
+var errlogger = log4js.getLogger('err');
 
-
+/*****运行输出***********/
 const log = console.log;
 const logError = console.error;
 
 const enableRateLimit = true;
-const timeout = 20000;
+const timeout = 60000;
 const rateLimit = 2000; // 2s
 
 async function test () {
@@ -18,36 +28,76 @@ async function test () {
     await Promise.all (ids.map (async (id, idx) => {
 
         let exchange = new ccxt[id] (ccxt.extend ({ enableRateLimit, timeout }, settings[id]))
-        console.log(id, exchange.rateLimit);
+        // console.log(id, exchange.rateLimit);
 
         // exchange.rateLimit = rateLimit ? rateLimit : exchange.rateLimit
         // exchange.tokenBucket.refillRate = 1 / exchange.rateLimit // 内部自带该设置
         
         try {       
                 
-            let market = await exchange.loadMarkets ();
-            let symbols = exchange.symbols;
+            let markets = await exchange.loadMarkets ();
+            let symbols =  Object.keys(markets);
 
-            if(exchange.has.fetchTickers) {
-                    while (true) {
+            // if(exchange.has.fetchTickers) {
+            //         while (true) {
 
-                        const tickers = await exchange.fetchTickers ();    
-                        console.log("tickers  " + id , tickers);    
-                    }
+            //             let tickers = await exchange.fetchTickers ();    
+            //             let time = moment().format('YYYY-MM-DD HH:mm:ss');
+            //             logger.info(time + "\t" + id + "\t" + symbol + "\t" + JSON.stringify(tickers));
+            //             console.log("tickers  " + id , tickers);    
+            //         }
 
-            } else {
+            // } else {
 
-                    while (true) {
+                    // while (true) {
+
+                        // for (let symbol of symbols) {  
+                        //     try {
+                                
+                        //         if ((symbol.indexOf ('.d') < 0)) { // skip darkpool symbols
+                                   
+                        //             let ticker = await exchange.fetchTicker ( symbol );   
+                        //             let time = moment().format('YYYY-MM-DD HH:mm:ss');
+                        //             logger.info(time + "\t" + id + "\t" + symbol + "\t" + JSON.stringify(ticker));
+                        //             return ticker;
+                        //         }
+                               
+                                
+                        //     } catch (e) {
+                        //         console.error("fetchTicker 0 error", e , "the change is: ",id, "the pair is: ", symbol);
+                        //     }
+                        // }
+                        
                         let tickers =  await Promise.all(symbols.map (async symbol => {
-                            return await exchange.fetchTicker ( symbol );                              
-                         }))
-                         console.log("tickers   " + id , tickers);
-                    }
-                }             
+                            
+                            try {
+                                
+                                if ((symbol.indexOf ('.d') < 0)) { // skip darkpool symbols
+                                   
+                                    let ticker = await exchange.fetchTicker ( symbol );   
+                                    let time = moment().format('YYYY-MM-DD HH:mm:ss');
+                                    logger.info(time + "\t" + id + "\t" + symbol + "\t" + JSON.stringify(ticker));
+                                    console.log("tickers   " + id , ticker);
+                                    return ticker;
+                                }
+                               
+                                
+                            } catch (e) {
+                                console.error("fetchTicker 0 error", e , "the change is: ",id, "the pair is: ", symbol);
+                            }
+                         })).catch(e => {
+                            console.error("fetchTrades 1 error", e);
+                        })
+           
+                        console.log("tickers   " + id , tickers);
+                    // }
+                // }             
         
 
         } catch (e)  {
-      
+         
+            errlogger.error(e);
+
         if (e instanceof ccxt.DDoSProtection) {
             logError (exchange.id, '[DDoS Protection] ' + e.message)
         } else if (e instanceof ccxt.RequestTimeout) {
@@ -70,7 +120,7 @@ async function test () {
 
     // when all of them are ready, do your other things
     // console.log ('Loaded exchanges:', Object.keys (exchanges).join (', '))
-    console.log(" end ");
+    console.log("The end ");
     
 }
 
